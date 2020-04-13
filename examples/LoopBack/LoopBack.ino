@@ -2,8 +2,9 @@
 
 // Simple loopback test: create 1 output to transmit
 // test pulses, and 1 input to receive the pulses
-PulsePositionOutput myOut;
-PulsePositionInput myIn;
+PulsePositionOutput myOut(FALLING);
+PulsePositionInput myIn(FALLING);
+//https://discuss.ardupilot.org/t/solved-teensy-ppm-via-pulse-position-library-to-pixhawk/37930
 
 void setup() {
   myOut.begin(9);  // connect pins 9 and 10 together...
