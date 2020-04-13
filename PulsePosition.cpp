@@ -64,7 +64,8 @@
 // Most libraries disable interrupts for no more than a few microseconds.
 // The OneWire library is a notable exception, so this may need to be lengthened
 // if a library that imposes unusual interrupt latency is in use.
-#define TX_PULSE_WIDTH      100.0
+#define TX_PULSE_WIDTH      300.0
+//https://discuss.ardupilot.org/t/solved-teensy-ppm-via-pulse-position-library-to-pixhawk/37930/7
 
 // When receiving, any time between rising edges longer than this will be
 // treated as the end-of-frame marker.
